@@ -17,11 +17,6 @@ export default defineConfig({
           'content-type': 'application/json'
         },
         method: 'POST',
-        // onProxyReq: (proxyReq) => {
-        //   proxyReq.setHeader('Access-Control-Allow-Origin', '*');
-        //   proxyReq.setHeader('Access-Control-Allow-Methods', 'POST');
-        //   proxyReq.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-        // },
       },
     },
   },
