@@ -14,8 +14,12 @@ export default defineConfig({
         target: 'https://api.notion.com/v1/pages',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/apicreate/, ''),
-        // Tambahkan properti `method` untuk menentukan metode permintaan
-        method: 'POST',
+        // Mengizinkan metode POST dari berbagai sumber
+        onProxyReq: (proxyReq) => {
+          proxyReq.setHeader('Access-Control-Allow-Origin', '*');
+          proxyReq.setHeader('Access-Control-Allow-Methods', 'POST');
+          proxyReq.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+        },
       },
     },
   },
