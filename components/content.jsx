@@ -2,6 +2,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 
 function Content() {
+    // eslint-disable-next-line no-unused-vars
     const [data, setData] = useState([]);
     const [totalNominal, setTotalNominal] = useState(0);
     const [totalDonatur, setTotalDonatur] = useState(0);
@@ -11,7 +12,7 @@ function Content() {
             try {
                 const options = {
                     method: 'POST',
-                    url: '/api',
+                    url: `https://url.vercel.app` + '/api',
                     headers: {
                         Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
                         accept: 'application/json',
