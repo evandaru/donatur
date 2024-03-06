@@ -9,7 +9,7 @@ function Table() {
             try {
                 const options = {
                     method: 'POST',
-                    url: '/api',
+                    url: 'https://url.vercel.app/api',
                     headers: {
                         Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
                         accept: 'application/json',
