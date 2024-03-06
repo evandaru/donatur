@@ -7,23 +7,10 @@ function Table() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const options = {
-                    method: 'POST',
-                    url: `https://donatur.vercel.app` + `/api`,
-
-                    // headers: {
-                    //     Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
-                    //     accept: 'application/json',
-                    //     'Notion-Version': '2022-06-28',
-                    //     'content-type': 'application/json'
-                    // },
-                    // data: { page_size: 100 }
-                };
-
-                const response = await axios.request(options);
+                const response = await axios.post('/api');
                 setData(response.data.results);
             } catch (error) {
-                console.error(error);
+                console.error('Error fetching data:', error);
             }
         };
         fetchData();
@@ -53,21 +40,9 @@ function Table() {
                             <th scope="col" className="px-6 py-3">
                                 Bukti Donasi
                             </th>
-
                         </tr>
                     </thead>
                     <tbody>
-                        {/* <tr className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                            <th scope="row" className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                                Apple MacBook Pro 17
-                            </th>
-                            <td className="px-6 py-4">Silver</td>
-                            <td className="px-6 py-4">Laptop</td>
-                            <td className="px-6 py-4">$2999</td>
-                            <td className="px-6 py-4">Coming soon</td>
-
-                        </tr> */}
-
                         {data.map((item, index) => (
                             <tr key={index} className="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                                 <td className="px-6 py-4">{index + 1}</td>
@@ -76,20 +51,13 @@ function Table() {
                                 <td className="px-6 py-4">{item.properties.PaymentMethod.select.name}</td>
                                 <td className="px-6 py-4">IDR {item.properties.Nominal.number}.000</td>
                                 <td className="px-6 py-4">Masih tahap Pengembangan</td>
-
                             </tr>
                         ))}
-
-
-
-
                     </tbody>
                 </table>
             </div>
-
-
-
         </div>
-    )
+    );
 }
-export default Table
+
+export default Table;
