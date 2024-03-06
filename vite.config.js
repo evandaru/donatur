@@ -16,6 +16,7 @@ export default defineConfig({
           'Notion-Version': '2022-06-28',
           'content-type': 'application/json'
         },
+        method: 'POST',
         // onProxyReq: (proxyReq) => {
         //   proxyReq.setHeader('Access-Control-Allow-Origin', '*');
         //   proxyReq.setHeader('Access-Control-Allow-Methods', 'POST');

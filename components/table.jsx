@@ -8,7 +8,7 @@ function Table() {
         const fetchData = async () => {
             try {
                 const options = {
-                    method: 'POST',
+                    // method: 'POST',
                     url: '/api',
                     // headers: {
                     //     Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
