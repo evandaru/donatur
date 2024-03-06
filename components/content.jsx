@@ -13,12 +13,7 @@ function Content() {
                 const options = {
                     method: 'POST',
                     url: '/api',
-                    headers: {
-                        Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
-                        accept: 'application/json',
-                        'Notion-Version': '2022-06-28',
-                        'content-type': 'application/json'
-                    },
+                 
                     data: { page_size: 100 }
                 };
 
