@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: 'https://donatur.vercel.app/',
   server: {
     proxy: {
       '/api': {
@@ -15,8 +16,6 @@ export default defineConfig({
           'Notion-Version': '2022-06-28',
           'content-type': 'application/json'
         },
-        method: 'POST',
-        allowMethods: ['POST']
       },
     },
   },
