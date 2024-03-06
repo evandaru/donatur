@@ -16,6 +16,7 @@ export default defineConfig({
           'content-type': 'application/json'
         },
         method: 'POST',
+        allowMethods: ['POST']
       },
     },
   },
