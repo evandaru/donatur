@@ -8,7 +8,7 @@ function Table() {
         const fetchData = async () => {
             try {
                 const options = {
-                    // method: 'POST',
+                    method: 'POST',
                     url: '/api',
                     // headers: {
                     //     Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
@@ -16,7 +16,7 @@ function Table() {
                     //     'Notion-Version': '2022-06-28',
                     //     'content-type': 'application/json'
                     // },
-                    data: { page_size: 100 }
+                    // data: { page_size: 100 }
                 };
 
                 const response = await axios.request(options);

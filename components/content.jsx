@@ -11,10 +11,10 @@ function Content() {
         const fetchData = async () => {
             try {
                 const options = {
-                    // method: 'POST',
+                    method: 'POST',
                     url: '/api',
 
-                    data: { page_size: 100 }
+                    // data: { page_size: 100 }
                 };
 
                 const response = await axios.request(options);
