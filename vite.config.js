@@ -1,7 +1,6 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -15,7 +14,9 @@ export default defineConfig({
         target: 'https://api.notion.com/v1/pages',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/apicreate/, ''),
+        // Tambahkan properti `method` untuk menentukan metode permintaan
+        method: 'POST',
       },
-    }
-  }
-})
+    },
+  },
+});
