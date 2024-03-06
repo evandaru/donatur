@@ -5,7 +5,9 @@ export default defineConfig({
   plugins: [react()],
   base: 'https://donatur.vercel.app/',
   server: {
+    origin: 'https://donatur.vercel.app',
     proxy: {
+      '/foo': 'https://donatur.vercel.app',
       '/api': {
         target: 'https://api.notion.com/v1/databases/f943b13338d643b3b91d9df822f1ed06/query',
         changeOrigin: true,
