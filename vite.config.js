@@ -10,7 +10,7 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
         headers: {
-          Authorization: 'Bearer secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
+          Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
           accept: 'application/json',
           'Notion-Version': '2022-06-28',
           'content-type': 'application/json'
