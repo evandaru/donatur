@@ -12,7 +12,7 @@ function Content() {
             try {
                 const options = {
                     method: 'POST',
-                    url: 'https://url.vercel.app/api',
+                    url: '/api',
                     headers: {
                         Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
                         accept: 'application/json',
