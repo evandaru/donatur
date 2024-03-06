@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
 
     proxy: {
-      '/api': {
+      'https://url.vercel.app/api': {
         target: 'https://api.notion.com/v1/databases/f943b13338d643b3b91d9df822f1ed06/query',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, ''),
