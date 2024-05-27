@@ -12,7 +12,7 @@ function Content() {
             try {
                 const options = {
                     method: 'POST',
-                    url: `https://donatur.vercel.app` + `/api`,
+                    url: `/api`,
 
                     // data: { page_size: 100 }
                 };

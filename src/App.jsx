@@ -1,5 +1,5 @@
-import Content from '../components/content'
-import Table from '../components/table'
+import Content from './components/content'
+import Table from './components/table'
 // import './App.css'
 
 function App() {

@@ -9,7 +9,7 @@ function Table() {
             try {
                 const options = {
                     method: 'POST',
-                    url: `https://donatur.vercel.app` + `/api`,
+                    url: `/api`,
 
                     // headers: {
                     //     Authorization: 'secret_dDkyTm301ESI6KmEYwLvZcoMrWWRqC9VRsxHftCwa6A',
