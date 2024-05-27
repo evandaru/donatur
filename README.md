@@ -1,8 +1,30 @@
-# React + Vite
+# cara installnya lur
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+di clone dulu
+git clone bla bla bla...
 
-Currently, two official plugins are available:
+trus `cd donatur`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+trus
+
+```
+npm install
+```
+
+ato
+
+```
+yarn
+```
+
+trus
+
+```
+npm run dev
+```
+
+ato
+
+```
+yarn dev
+```
