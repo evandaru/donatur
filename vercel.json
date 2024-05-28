@@ -1,28 +1,8 @@
 {
-    "version": 2,
-    "builds": [
+    "rewrites": [
         {
-            "src": "src/main.jsx",
-            "use": "@vercel/node"
-        },
-        {
-            "src": "public/index.html",
-            "use": "@vercel/static"
-        },
-        {
-            "src": "public/*",
-            "use": "@vercel/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "headers": {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-                "Access-Control-Allow-Headers": "Content-Type, Authorization"
-            },
-            "dest": "/index.html"
+            "source": "/(.*)",
+            "destination": "/"
         }
     ]
 }
