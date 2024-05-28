@@ -16,6 +16,14 @@ export default defineConfig({
           'Notion-Version': '2022-06-28',
           'content-type': 'application/json'
         },
+        configure: (proxy, options) => {
+          proxy.on('proxyReq', (proxyReq, req, res) => {
+            console.log(`[Proxy] ${req.method} ${req.url}`);
+            console.log(`[Proxy] Headers: `, req.headers);
+            proxyReq.removeHeader("x-forwarded-host");
+            console.log(`[Proxy] proxyReq Header: `, proxyReq.getHeaders());
+          });
+        }
       },
     },
   },
