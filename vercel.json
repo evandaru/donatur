@@ -1,12 +1,12 @@
 {
-    "rewrites": [
+    "routes": [
         {
-            "source": "/(.*)",
-            "destination": "/"
-        },
-        {
-            "source": "/api(.*)",
-            "destination": "/api"
+            "src": "/api/(.*)",
+            "dest": "/api/",
+            "methods": [
+                "GET",
+                "POST"
+            ]
         }
     ]
 }
