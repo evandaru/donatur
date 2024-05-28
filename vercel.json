@@ -1,8 +1,11 @@
 {
-    "rewrites": [
+    "routes": [
         {
-            "source": "/api",
-            "destination": "https://donatur.vercel.app/api"
+            "src": "/api/(.*)",
+            "dest": "/api/$1",
+            "methods": [
+                "POST"
+            ]
         }
     ]
 }
