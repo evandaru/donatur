@@ -1,3 +1,5 @@
+link nya [Donatur](https://donatur.vercel.app/)
+
 # cara installnya lur
 
 di clone dulu
@@ -28,3 +30,4 @@ ato
 ```
 yarn dev
 ```
+
